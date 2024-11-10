@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Applying Google Font */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Styles for body and layout */
+        body {
+            background-color: #8c5098; /* Updated background color */
+            color: #f7f7f7; /* Light text color for contrast */
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+            color: white;
+            text-align: center;
+            padding: 5em 1em;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background: rgba(255, 255, 255, 0.2); /* Light overlay for readability */
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 0.3em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            font-weight: 300;
+            line-height: 1.5em;
+        }
+
+        /* Organization Grid */
+        .organizations {
+            display: grid;
+            gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            max-width: 1000px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+
+        .org {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .org img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        /* Hover Effects */
+        .org:hover {
+            transform: scale(1.05);
+        }
+
+        .org:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #4b2e5d; /* Darker purple for footer contrast */
+            color: #f7f7f7;
+            font-size: 0.9em;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Welfare in Qatar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Support Animal Welfare in Qatar</h1>
+            <p>Learn more about Qatar's dedicated animal welfare organizations. Click on the logos below to explore their work and see how you can help.</p>
+        </div>
+    </header>
+
+    <!-- Organization Grid -->
+    <main>
+        <section class="organizations">
+            <a href="https://www.qaws.org/newsite/" target="_blank" class="org">
+                <img src="qaws.jpg" alt="QAWS">
+            </a>
+            <a href="https://www.tnrqatar.com/p/home-page.html" target="_blank" class="org">
+                <img src="tnr.png" alt="TNR Qatar">
+            </a>
+            <a href="https://www.instagram.com/catloversqatar/?hl=en" target="_blank" class="org">
+                <img src="cat_lovers.jpeg" alt="Cat Lovers Qatar">
+            </a>
+            <a href="https://pawsrescueqatar.org/" target="_blank" class="org">
+                <img src="paws_rescue.jpg" alt="Paws Rescue Qatar">
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 IGCSE Global Perspectives Team Project – For Project Purposes Only.</p>
+    </footer>
+</body>
+</html>
