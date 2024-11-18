@@ -79,6 +79,30 @@
             transform: scale(1.1);
         }
 
+        /* Links Section */
+        .links-section {
+            margin: 3em auto;
+            padding: 1em;
+        }
+
+        .link {
+            display: inline-block;
+            margin: 1em 0;
+            padding: 1em 2em;
+            background-color: #4b2e5d; /* Matches footer color */
+            color: #f7f7f7;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .link:hover {
+            background-color: #603b72; /* Slightly lighter purple on hover */
+            transform: translateY(-3px);
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -92,7 +116,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Welfare in Qatar</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -119,6 +142,12 @@
             <a href="https://pawsrescueqatar.org/" target="_blank" class="org">
                 <img src="paws_rescue.jpg" alt="Paws Rescue Qatar">
             </a>
+        </section>
+
+        <!-- Links Section -->
+        <section class="links-section">
+            <a href="https://forms.gle/zPHMoTWJuemXvUUJ9" target="_blank" class="link">Feedback Form</a>
+            <a href="https://forms.gle/56g4HDjEbTHgWtuKA" target="_blank" class="link">Volunteer Form</a>
         </section>
     </main>
 
