@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NZ74LP72');</script>
-<!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-978HP03CCK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-978HP03CCK');
-</script>
     <style>
         /* Applying Google Font */
         * {
@@ -95,30 +79,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             transform: scale(1.1);
         }
 
-        /* Links Section */
-        .links-section {
-            margin: 3em auto;
-            padding: 1em;
-        }
-
-        .link {
-            display: inline-block;
-            margin: 1em 0;
-            padding: 1em 2em;
-            background-color: #4b2e5d; /* Matches footer color */
-            color: #f7f7f7;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .link:hover {
-            background-color: #603b72; /* Slightly lighter purple on hover */
-            transform: translateY(-3px);
-        }
-
         /* Footer */
         footer {
             text-align: center;
@@ -128,25 +88,94 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-size: 0.9em;
         }
 
+        /* Popup Styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            background-color: #4b2e5d; /* Dark purple theme for popup */
+            padding: 2em;
+            border-radius: 10px;
+            color: #f7f7f7;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .popup video {
+            max-width: 90%;
+            max-height: 80vh;
+        }
+
+        .popup .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            color: #4b2e5d;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .show-popup {
+            display: block;
+        }
+
+        /* Button Styling */
+        .button-style {
+            margin: 1em;
+            padding: 1em 2em;
+            background-color: #4b2e5d;
+            color: #f7f7f7;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+            cursor: pointer;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .button-style:hover {
+            background-color: #6a3d7b;
+        }
+
+        .watch-animation-btn {
+            margin-top: 2em;
+        }
+
+        .social-links {
+            margin-bottom: 2em;
+        }
+
+        /* Additional Spacing for Footer */
+        .footer-spacing {
+            margin-top: 2em; /* Added spacing between button and footer */
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Welfare in Qatar</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ74LP72"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
@@ -172,21 +201,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
         </section>
 
-        <!-- Links Section -->
-        <section class="links-section">
-            <a href="https://forms.gle/zPHMoTWJuemXvUUJ9" target="_blank" class="link">Feedback Form</a>
-            <a href="https://forms.gle/56g4HDjEbTHgWtuKA" target="_blank" class="link">Volunteer Form</a>
-        </section>
-    </main>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61568384257189" class="button-style" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/abhin_v20/?hl=en" class="button-style" target="_blank">Instagram</a>
+        </div>
 
-<!-- counterAPI library, insert anywhere on the page. -->
-<script src="https://https://rescuecatsqatar.github.io/.com/c.js" async ></script>
-<!-- Add the counter instance somewhere to your template... -->
-<div class="counterapi" style="min-height:44px" ></div>
+        <!-- Button to Open Popup -->
+        <button class="button-style watch-animation-btn" onclick="showPopup()">Watch Animation</button>
+
+        <!-- Popup for Video -->
+        <div class="popup-overlay" id="popup-overlay"></div>
+        <div class="popup" id="popup">
+            <button class="close-btn" onclick="hidePopup()">X</button>
+            <video controls>
+                <source src="Animation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="footer-spacing"></div>
+    </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 IGCSE Global Perspectives Team Project – For Project Purposes Only.</p>
     </footer>
+
+    <script>
+        // JavaScript for Popup
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('popup-overlay');
+
+        function showPopup() {
+            popup.classList.add('show-popup');
+            overlay.classList.add('show-popup');
+        }
+
+        function hidePopup() {
+            popup.classList.remove('show-popup');
+            overlay.classList.remove('show-popup');
+        }
+    </script>
 </body>
 </html>
